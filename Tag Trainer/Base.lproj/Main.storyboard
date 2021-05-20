@@ -407,7 +407,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLA-nu-1X5">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLA-nu-1X5">
                                             <rect key="frame" x="124" y="40.5" width="147" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
@@ -540,50 +540,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7mf-qN-9L4">
-                                <rect key="frame" x="70" y="298" width="169" height="32"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7mf-qN-9L4">
+                                <rect key="frame" x="70" y="297.5" width="169" height="32"/>
                                 <segments>
                                     <segment title="Cartão"/>
                                     <segment title="Boleto"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" name="AccentColor"/>
                             </segmentedControl>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Wc-3h-g4C">
-                                <rect key="frame" x="131.5" y="105" width="51" height="31"/>
-                                <color key="onTintColor" name="AccentColor"/>
-                            </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total carrinho: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6M-tp-eO7">
-                                <rect key="frame" x="48" y="65" width="113" height="21"/>
+                                <rect key="frame" x="48" y="65" width="113" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrega" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owF-eY-Vd7">
-                                <rect key="frame" x="48" y="110" width="75.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retirada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RY-4S-Mvc">
-                                <rect key="frame" x="199.5" y="110" width="68.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="9ca-zv-O6P">
+                                <rect key="frame" x="61.5" y="110" width="197.5" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrega" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owF-eY-Vd7">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Wc-3h-g4C">
+                                        <rect key="frame" x="72" y="0.0" width="51" height="31"/>
+                                        <color key="onTintColor" name="AccentColor"/>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retirada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RY-4S-Mvc">
+                                        <rect key="frame" x="134" y="0.0" width="63.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total com Frete:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sN-It-hh0">
-                                <rect key="frame" x="48" y="155" width="123" height="21"/>
+                                <rect key="frame" x="48" y="156" width="211" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forma de Pagamento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOA-iK-8Mq">
-                                <rect key="frame" x="70" y="259" width="169" height="21"/>
+                                <rect key="frame" x="70" y="259" width="169" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vx-wq-4hS">
-                                <rect key="frame" x="70" y="383" width="172" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vx-wq-4hS">
+                                <rect key="frame" x="95" y="382.5" width="130" height="30.5"/>
                                 <state key="normal" title="Finalizar Pagameto"/>
                                 <connections>
                                     <action selector="checkout:" destination="LV3-Op-xpH" eventType="touchUpInside" id="yf6-J0-4Wc"/>
@@ -594,26 +599,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vOA-iK-8Mq" firstAttribute="centerX" secondItem="7mf-qN-9L4" secondAttribute="centerX" id="8cv-XT-3CM"/>
-                            <constraint firstItem="vOA-iK-8Mq" firstAttribute="top" secondItem="0sN-It-hh0" secondAttribute="bottom" constant="83" id="I5j-KP-BVv"/>
+                            <constraint firstItem="1Vx-wq-4hS" firstAttribute="centerX" secondItem="1s5-Ob-8nw" secondAttribute="centerX" id="Ccd-5u-kdc"/>
                             <constraint firstItem="G6M-tp-eO7" firstAttribute="leading" secondItem="UhE-5q-213" secondAttribute="leading" constant="48" id="Jiq-Db-PWc"/>
-                            <constraint firstItem="owF-eY-Vd7" firstAttribute="baseline" secondItem="3RY-4S-Mvc" secondAttribute="baseline" id="Jyi-AY-54F"/>
-                            <constraint firstItem="7mf-qN-9L4" firstAttribute="leading" secondItem="1Vx-wq-4hS" secondAttribute="leading" id="NMA-r4-mxd"/>
-                            <constraint firstItem="G6M-tp-eO7" firstAttribute="leading" secondItem="owF-eY-Vd7" secondAttribute="leading" id="NkS-VO-plB"/>
                             <constraint firstItem="vOA-iK-8Mq" firstAttribute="trailing" secondItem="7mf-qN-9L4" secondAttribute="trailing" id="Nwi-Ul-czb"/>
-                            <constraint firstItem="owF-eY-Vd7" firstAttribute="leading" secondItem="0sN-It-hh0" secondAttribute="leading" id="O8z-wT-Kd4"/>
                             <constraint firstItem="7mf-qN-9L4" firstAttribute="top" secondItem="vOA-iK-8Mq" secondAttribute="bottom" constant="18" id="OON-Dn-Xrb"/>
-                            <constraint firstItem="3RY-4S-Mvc" firstAttribute="top" secondItem="UhE-5q-213" secondAttribute="top" constant="110" id="U9w-QB-hQR"/>
+                            <constraint firstItem="UhE-5q-213" firstAttribute="bottom" secondItem="1Vx-wq-4hS" secondAttribute="bottom" constant="135" id="PC0-Po-am5"/>
+                            <constraint firstItem="9ca-zv-O6P" firstAttribute="centerX" secondItem="1s5-Ob-8nw" secondAttribute="centerX" id="S9a-hz-TgF"/>
                             <constraint firstItem="UhE-5q-213" firstAttribute="trailing" secondItem="vOA-iK-8Mq" secondAttribute="trailing" constant="81" id="Wxk-2X-CjX"/>
-                            <constraint firstItem="1Vx-wq-4hS" firstAttribute="top" secondItem="7mf-qN-9L4" secondAttribute="bottom" constant="54" id="beL-1L-SNn"/>
-                            <constraint firstItem="owF-eY-Vd7" firstAttribute="centerY" secondItem="9Wc-3h-g4C" secondAttribute="centerY" id="dSH-Vj-x8P"/>
-                            <constraint firstItem="UhE-5q-213" firstAttribute="trailing" secondItem="3RY-4S-Mvc" secondAttribute="trailing" constant="52" id="pw0-jU-C2v"/>
-                            <constraint firstItem="UhE-5q-213" firstAttribute="trailing" secondItem="1Vx-wq-4hS" secondAttribute="trailing" constant="78" id="r1d-eh-2ks"/>
+                            <constraint firstItem="1Vx-wq-4hS" firstAttribute="top" secondItem="7mf-qN-9L4" secondAttribute="bottom" constant="54" id="aiy-Iz-yIt"/>
+                            <constraint firstItem="0sN-It-hh0" firstAttribute="top" secondItem="9ca-zv-O6P" secondAttribute="bottom" constant="15" id="laU-zi-6s6"/>
+                            <constraint firstItem="vOA-iK-8Mq" firstAttribute="top" secondItem="0sN-It-hh0" secondAttribute="bottom" constant="82.5" id="rFl-eN-DpW"/>
                             <constraint firstItem="G6M-tp-eO7" firstAttribute="top" secondItem="UhE-5q-213" secondAttribute="top" constant="65" id="sI5-Rj-8pC"/>
-                            <constraint firstItem="9Wc-3h-g4C" firstAttribute="centerX" secondItem="1Vx-wq-4hS" secondAttribute="centerX" id="sZ1-FP-AJm"/>
-                            <constraint firstItem="3RY-4S-Mvc" firstAttribute="leading" secondItem="9Wc-3h-g4C" secondAttribute="trailing" constant="19" id="tV1-ZX-aED"/>
-                            <constraint firstItem="0sN-It-hh0" firstAttribute="top" secondItem="9Wc-3h-g4C" secondAttribute="bottom" constant="19" id="wCG-6J-LvW"/>
+                            <constraint firstItem="0sN-It-hh0" firstAttribute="leading" secondItem="UhE-5q-213" secondAttribute="leading" constant="48" id="vgG-2X-k5B"/>
+                            <constraint firstItem="UhE-5q-213" firstAttribute="trailing" secondItem="0sN-It-hh0" secondAttribute="trailing" constant="61" id="vuX-cy-RZJ"/>
                             <constraint firstItem="7mf-qN-9L4" firstAttribute="leading" secondItem="UhE-5q-213" secondAttribute="leading" constant="70" id="whj-AA-xiR"/>
-                            <constraint firstItem="9Wc-3h-g4C" firstAttribute="leading" secondItem="owF-eY-Vd7" secondAttribute="trailing" constant="8" id="z6k-3R-G2H"/>
+                            <constraint firstItem="9ca-zv-O6P" firstAttribute="top" secondItem="G6M-tp-eO7" secondAttribute="bottom" constant="24.5" id="x8L-WN-1c3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zzY-o7-ZbR"/>
