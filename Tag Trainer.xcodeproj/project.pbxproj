@@ -59,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5208E972656A77000EA1F8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5C5D3F625CD95EF00469A7D /* Main.storyboard */,
+				E5C5D3FB25CD95F400469A7D /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E5C256B725D1B3EC00213B8C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,13 +113,12 @@
 		E5C5D3EF25CD95EF00469A7D /* Tag Trainer */ = {
 			isa = PBXGroup;
 			children = (
-				E5C5D3F025CD95EF00469A7D /* AppDelegate.swift */,
 				E5C5D3F225CD95EF00469A7D /* SceneDelegate.swift */,
+				E5C5D3F025CD95EF00469A7D /* AppDelegate.swift */,
+				E5C5D3F925CD95F400469A7D /* Assets.xcassets */,
+				E5208E972656A77000EA1F8C /* View */,
 				E5C256BA25D1D3A600213B8C /* Model */,
 				E5C256B725D1B3EC00213B8C /* Controller */,
-				E5C5D3F625CD95EF00469A7D /* Main.storyboard */,
-				E5C5D3F925CD95F400469A7D /* Assets.xcassets */,
-				E5C5D3FB25CD95F400469A7D /* LaunchScreen.storyboard */,
 				E5C5D3FE25CD95F400469A7D /* Info.plist */,
 			);
 			path = "Tag Trainer";
